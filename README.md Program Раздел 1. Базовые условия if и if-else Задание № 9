@@ -1,0 +1,24 @@
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    namespace Program9
+    { 
+    internal class Program
+    {
+        static void Main()
+        {
+            Console.Write("Первое число: ");
+            if (!int.TryParse(Console.ReadLine(), out int a)) { Console.WriteLine("Ошибка."); return; }
+            Console.Write("Второе число: ");
+            if (!int.TryParse(Console.ReadLine(), out int b)) { Console.WriteLine("Ошибка."); return; }
+
+            if (a == b)
+                Console.WriteLine("Числа равны");
+            else
+                Console.WriteLine($"Произведение: {a * b}");
+        }
+    }
+    }
